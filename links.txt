@@ -1,0 +1,16 @@
+tutorial
+https://flask.palletsprojects.com/en/2.1.x/tutorial/database/
+
+tutorial code
+https://github.com/pallets/flask/tree/2.1.1/examples/tutorial
+
+pymongo docs
+https://pymongo.readthedocs.io/en/stable/examples/index.html
+
+pymongo quickstart
+https://www.w3schools.com/python/python_mongodb_insert.asp
+
+flask-pymongo
+https://flask-pymongo.readthedocs.io/en/latest/
+
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>flask server demo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+
+  <body>
+    <h1 id="#">neoflask spasms from the duture</h1>
+    <button onclick="handleClick()">click me</button>
+    <script>
+      let heading = document.getElementById("#");
+      const handleClick = (event) => {
+        console.log("** button clicked");
+        console.log(`event: `, event);
+        heading.innerHTML = "good job faggot";
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+body {
+    background: rgb(169, 194, 169);
+    color: black;
+    padding: 10vh 0 10vh 0;
+  }
+
+  h1 {
+    display: block;
+    text-align: center;
+  }
+
+  button {
+    justify-content: center;
+    display: block;
+    margin: 40px auto 40px auto;
+    height: 60px;
+    width: 150px;
+}
