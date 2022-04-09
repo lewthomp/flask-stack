@@ -1,4 +1,7 @@
 import pymongo
+import json
+
+# import ipython
 
 
 print("\n** PyMongo database demo running\n")
@@ -11,17 +14,20 @@ db = client["demo"]
 
 postsCol = db["posts"]
 
-post0 = {
-    "_id": 0,
-    "title:": "The Promised Land",
-    "author": "rvdemonk",
-    "tags": ['neoblog', 'blockchain', 'philosophy']    
-}
 
 def add_post(post: dict):
     return postsCol.insert_one(post)
 
 
+def get_posts():
+    return postsCol.find()
 
 
+def main():
+    collection = postsCol.find()
+    for i, doc in enumerate(collection):
+        print(f"{i}/", doc["_id"], doc["author"], doc["tags"])
 
+
+if __name__ == "__main__":
+    app = main()
